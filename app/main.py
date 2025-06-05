@@ -10,6 +10,8 @@ class Animal:
         self.hidden = False
         Animal.alive.append(self)
 
+    # there is only one issue with __repr__ method
+    # and how test_print_animal_alive accepts it
     def __repr__(self) -> str:
         return (
             f"{{Name: {self.name}, "
