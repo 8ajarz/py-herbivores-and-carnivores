@@ -13,11 +13,12 @@ class Animal:
     # there is only one issue with __repr__ method
     # and how test_print_animal_alive accepts it
     def __repr__(self) -> str:
-        return (
-            f"{{Name: {self.name}, "
-            f"Health: {self.health}, "
-            f"Hidden: {self.hidden}}}"
-        )
+        return [
+            {"Name" : self.name},
+            {"Health" : self.health},
+            {"Hidden" : self.hidden}
+        ]
+
 
 
 class Herbivore(Animal):
